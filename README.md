@@ -1,5 +1,5 @@
-
 各个模块分工：
+
 	1. loader层：
 	loader层主要是将文档转换成langchain document形式，用于存储到向量数据库
 	2. embedding层：
@@ -28,7 +28,8 @@
     4. 修改controller中的qa_controller中的query问题即可使用
 
 
-参数说明：
+config参数说明：
+
     [path]
     ##文档地址
     document_path =
