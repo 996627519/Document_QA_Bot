@@ -1,5 +1,4 @@
-各个模块分工：
-
+# 各个模块分工：
 	1. loader层：
 	loader层主要是将文档转换成langchain document形式，用于存储到向量数据库
 	2. embedding层：
@@ -21,14 +20,14 @@
 	10. controller层：
 	controller层是程序入口，主要是用于调用service中的功能，可以接收用户的问题，提供llm的回复。
 
-使用方法：
+# 使用方法：
     1. 首先需要使用到llm的api（以deepseek为例），将个人秘钥apikey写入文件夹根目录.env中
     2. 修改config文件夹下的config.ini文件document_path，将其指向对应的pdf文件
     3. 第一次运行需要进行切片并将document存储到向量数据库，执行controller的ingest_document方法即可，仅第一次运行或者变更文件时执行即可。
     4. 修改controller中的qa_controller中的query问题即可使用
 
 
-config参数说明：
+# config参数说明：
 
     [path]
     ##文档地址
